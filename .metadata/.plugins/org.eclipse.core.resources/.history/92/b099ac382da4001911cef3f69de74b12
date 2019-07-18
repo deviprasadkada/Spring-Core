@@ -1,0 +1,19 @@
+package com.javatpoint;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class HelloSpringApp {
+public static void main(String[] args) {
+	//*************SPring Inversion of COntrol***********
+	//1.configuring the spring bean in applicationcontext.xml
+	//2. Loading the Spring configuration file
+	ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+	//3.Retrieving the beans from spring container
+	Coach theCoach=(Coach) context.getBean("myCoach");
+	//4.call methods on the bean
+	System.out.println(theCoach.getDailyWorkout());
+	//5. CLose the context
+	context.close();
+	
+}
+}

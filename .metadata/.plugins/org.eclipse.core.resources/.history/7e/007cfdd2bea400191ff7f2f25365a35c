@@ -1,0 +1,22 @@
+package com.udemy;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SetterDemo {
+
+	public static void main(String[] args) {
+
+	//load the spring config file
+		ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+	//reteieve bean from container
+		CricketCoach theCoach=(CricketCoach) context.getBean("myCricketCoach");
+	//call methods on the bean
+		System.out.println(theCoach.getDailyWorkout());
+		
+		System.out.println(theCoach.getDailyFortune());
+	//close the contextr	
+		context.close();
+		
+	}
+
+}

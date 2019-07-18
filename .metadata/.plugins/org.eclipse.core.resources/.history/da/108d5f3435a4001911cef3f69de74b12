@@ -1,0 +1,21 @@
+package com.javatpoint;
+
+public class TrackCoach implements Coach {
+
+	
+	private FortuneService fortuneService;
+	
+	@Override
+	public String getDailyWorkout() {
+		return "i am track coach i will track the workout";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

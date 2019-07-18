@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.journaldev&apos; to &apos;springprojectdemo/src/main/java/com.demo.bean&apos;&#x0D;&#x0A;- Original project: &apos;SpringJDBCTemplateExample&apos;&#x0D;&#x0A;- Destination element: &apos;springprojectdemo/src/main/java/com.demo.bean&apos;&#x0D;&#x0A;- Original element: &apos;SpringJDBCTemplateExample/src/main/java/com.journaldev&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=springprojectdemo/src\/main\/java&lt;com.demo.bean" element1="/src\/main\/java&lt;com.journaldev" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1563294079399" version="1.0"/>
+</session>

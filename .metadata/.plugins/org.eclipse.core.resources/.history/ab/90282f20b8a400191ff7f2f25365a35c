@@ -1,0 +1,40 @@
+package com.udemy;
+
+public class CricketCoach implements Coach {
+private FortuneService fortuneService;
+	
+
+
+
+
+
+// our no -arg constructor
+	public CricketCoach() {
+	System.out.println("no ar cons cricket coach");
+}
+
+	
+	
+	
+	//our sxetter method
+	public void setFortuneService(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+
+
+
+
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "practice bowling its a cricket";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return fortuneService.getFortune();
+	}
+
+}
